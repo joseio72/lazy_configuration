@@ -2,6 +2,9 @@ return {
   {
     "williamboman/mason.nvim",
     lazy = false,
+    opts = function(_,opts)
+      table.insert(opts.ensure_installed, "prettier")
+    end, 
     config = function()
       require("mason").setup()
     end,
