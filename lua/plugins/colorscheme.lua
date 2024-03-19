@@ -6,14 +6,20 @@ return {
 		"folke/tokyonight.nvim",
 		lazy = true,
 		priority = 100,
-		opts = { style = "moon" },
+		opts = { style = "night" },
 	},
-
-	-- configure Lazy to use moonfly
+	{
+		"tiagovla/tokyodark.nvim",
+		opts = {},
+		config = function(_, opts)
+			require("tokyodark").setup(opts) -- calling setup is optional
+			vim.cmd([[colorscheme tokyodark]])
+		end,
+	},
 	{
 		"LazyVim/LazyVim",
 		opts = {
-			colorscheme = "moonfly",
+			colorscheme = "tokyonight",
 		},
 	},
 	-- catppuccin
