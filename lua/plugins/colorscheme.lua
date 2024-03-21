@@ -1,7 +1,6 @@
 return {
 	{ "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 20000 },
-	{ "rebelot/kanagawa.nvim" },
-	-- tokyonight
+	{ "rebelot/kanagawa.nvim" }, -- tokyonight
 	{
 		"folke/tokyonight.nvim",
 		lazy = true,
