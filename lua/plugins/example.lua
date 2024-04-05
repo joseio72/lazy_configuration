@@ -184,6 +184,7 @@ return {
     opts = {
       ensure_installed = {
         "stylua",
+        "prettier",
         "shellcheck",
         "shfmt",
         "flake8",
