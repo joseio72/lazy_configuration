@@ -1,9 +1,0 @@
-{
-  "extras": [
-    "plugins.extras.formatting.prettier"
-  ],
-  "news": {
-    "NEWS.md": "3314"
-  },
-  "version": 3
-}
