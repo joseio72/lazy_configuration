@@ -16,7 +16,7 @@ return {
 			"nvim-lua/plenary.nvim",
 			"hrsh7th/nvim-cmp",
 			"nvim-telescope/telescope.nvim",
-			" nvim-treesitter",
+			"nvim-treesitter",
 			-- see below for full list of optional dependencies 👇
 		},
 		completion = {
