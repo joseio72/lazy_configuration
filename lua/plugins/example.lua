@@ -19,20 +19,6 @@ return {
   -- disable trouble
   { "folke/trouble.nvim", enabled = false },
 
-  -- change some telescope options and a keymap to browse plugin files
-  
-  -- add pyright to lspconfig
-  {
-    "neovim/nvim-lspconfig",
-    ---@class PluginLspOpts
-    opts = {
-      ---@type lspconfig.options
-      servers = {
-        -- pyright will be automatically installed with mason and loaded with lspconfig
-        pyright = {},
-      },
-    },
-  },
 {
   "hrsh7th/cmp-nvim-lsp",
   "hrsh7th/cmp-buffer",
@@ -145,7 +131,7 @@ return {
     opts = {
       ensure_installed = {
         "stylua",
-        "shellcheck",
+        "shellcheck","js-debug-adapter",
         "shfmt",
         "gopls",
         "flake8",
